@@ -26,7 +26,7 @@
         margin-right: auto;        
         font-size: 160%;
         background: #D3D3D3;
-        border: solid 3px firebrick;
+        border-left: solid 3px firebrick;
         padding: 30px;
         margin-top: 80px;
         margin-bottom: 80px;
@@ -44,7 +44,56 @@
     .villagers{
         border-left: solid 2px #ff0000;
     }
-   
+
+    header h1:first-child{
+        background-color: #ffff00;
+    }
+
+    .good, .bad{
+        text-transform: capitalize;
+    }
+    
+    .good{
+        color: #008000;
+    }
+
+    .bad{
+        color: #ff0000;
+    }
+
+    table tr:nth-child(odd){
+        background: grey;
+    }
+
+    table tr:nth-child(even){
+        background: white;
+    }
+
+    .first_list li:nth-child(1){
+        background-image: url("bien.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 25px;
+    }
+
+    .first_list li:nth-child(2){
+        background-image: url("mal.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 25px;
+    }
+
+    .first_list li:nth-child(3){
+        background-image: url("chat.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 25px;
+    }
+
+    .paragraph_bold{
+        font-weight: bold;
+    }
+
    </style>
 
    <header>
@@ -56,16 +105,16 @@
     <time datetime="2023-27-11">May 11, 2016</date>, <span class="autor">Alexandre Gorius</span>
    </blockquote>
    
-   <q>In nature, Good & Evil do not exist. The Universe itself is neither good nor bad, but a potential in permanent development.</q>
+   <p class="paragraph_bold">In nature,<em class="good">Good</em> & Evil do not exist. The Universe itself is neither <em class="good">good</em>nor <strong class="bad">bad</strong>, but a potential in permanent development.</p>
 
    <h2>In life, there are 4 types of people.</h2>
 
-   <ol>
-   <li>- people who think the Internet is good,</li>
-   <li>- people who think the Internet is evil,</li>
-   <li>- people who think the Internet is cats,</li>
-   <li>- people who don't think about it.</li>
-   </ol>
+   <ul class="first_list">
+   <li>people who think the Internet is good,</li>
+   <li>people who think the Internet is evil,</li>
+   <li>people who think the Internet is cats,</li>
+   <li>people who don't think about it.</li>
+   </ul>
    
    <img src="https://cdn-images-1.medium.com/max/1000/1*2PCmLZyzQaF2pyKYkSTFpA.jpeg" alt="medium">
    
@@ -103,7 +152,7 @@
    <p>The following day his son tried to break one of the horses, and while riding it, he was thrown and broke his leg. The neighbors then said, <q class="villagers">Oh dear, that’s 
    too <strong class="bad">bad</strong>,</q> and the farmer responded, <q class="farmer">Is it <em class="good">good</em>? Is it <strong class="bad">bad</strong> ? I don't know.</q> The next day the conscription officers came around to conscript people into the 
    army, and they rejected his son because he had a broken leg. Again all the neighbors came around and said, <q class="villagers">Isn’t that great! Again, he said, qIs it <em class="good">good</em>? Is 
-   it bad? I don't know.</q></p>
+   it <strong class="bad">bad</strong>? I don't know.</q></p>
    
    <p>The whole process of nature is an integrated process of immense complexity, and it’s really impossible to tell whether anything that happens in it is <em class="good">good</em>  
    or <strong class="bad">bad</strong>— because you never know what will be the consequence of the misfortune; or, you never know what will be the consequences of <em class="good">good</em>fortune.</p>
@@ -123,7 +172,7 @@
    <caption>Table representing the farmer's philosophy.</caption>
    <thead>
      <tr>
-        <th> Event</th>
+        <th>Event</th>
         <th><em class="good">Good</em> or <strong class="bad">Bad</strong>?</th>
      </tr>
    </thead>
